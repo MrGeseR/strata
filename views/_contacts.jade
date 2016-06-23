@@ -14,7 +14,26 @@
             textarea.input.contactsForm__textarea(name='textarea' placeholder='Message')
       input.button.button_submit(type='submit' value='Send Message')
     .col-sm-4
-      ul.contactsList
-        li
-        li
-        li
+      ul.contactsList.row
+        li.contactsList__item.contactsList__item_address.col-xs-12
+          i.fa.fa-home.icon
+          | 1234 Somewhere Rd.
+          br
+          | Nashville, TN 00000
+          br
+          | United States
+        li.contactsList__item.contactsList__item_address.col-xs-12
+          i.fa.fa-mobile.fa-3.icon
+          | 000-000-0000
+          
+        li.contactsList__item.contactsList__item_address.col-xs-12
+          i.fa.fa-envelope-o.icon
+          a.simple_link(href='#') hello@untitled.tld
+
+        //- li.contactsList_item
+        //-   h4.icon.fa-mobile
+        //-   p.contactsList_contact wadwadwa
+
+        //- li.contactsList_item
+        //-   h4.icon.fa-home
+        //-   p.contactsList_contact wadwadwa
