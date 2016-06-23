@@ -3,7 +3,7 @@
   p Accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque lorem ipsum dolor.
   .row
     .col-sm-8
-      form(method='post' action='#')
+      form.contactsForm(method='post' action='#')
         .row
           .col-sm-6
             input.input.input_group(type='text' name='Name' placeholder='Name')
@@ -11,10 +11,10 @@
             input.input.input_group(type='email' name='Email' placeholder='Email')
         .row
           .col-sm-12
-            textarea.input(name='textarea' placeholder='Message')
-      input.button(type='submit' value='Send Message')
+            textarea.input.contactsForm__textarea(name='textarea' placeholder='Message')
+      input.button.button_submit(type='submit' value='Send Message')
     .col-sm-4
-      ul
+      ul.contactsList
         li
         li
         li
