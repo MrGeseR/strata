@@ -4,12 +4,17 @@
   .row
     .col-sm-8
       form(method='post' action='#')
-        .row.form_row
+        .row
           .col-sm-6
-            input(type='text' name='Name' placeholder='Name')
+            input.input.input_group(type='text' name='Name' placeholder='Name')
           .col-sm-6
-            input(type='email' name='Email' placeholder='Email')
-        .row.form_row
+            input.input.input_group(type='email' name='Email' placeholder='Email')
+        .row
           .col-sm-12
-            textarea(name='textarea' placeholder='Message')
+            textarea.input(name='textarea' placeholder='Message')
+      input.button(type='submit' value='Send Message')
     .col-sm-4
+      ul
+        li
+        li
+        li
