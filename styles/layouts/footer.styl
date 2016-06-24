@@ -15,6 +15,9 @@
   transition 0.5s
   &:hover,&:active,&:focus
     color #49bf9d
+@media (max-width 1800px)
+  .socials__link
+    font-size 1.75rem
 .copyrights
   display block
   font-size .8rem
@@ -25,11 +28,28 @@
     line-height 1rem
     &:not(:last-child)
       border-right 1px solid rgba(white, 0.4)
+@media (min-width 992px) and (max-width 1300px)
+  .copyrights
+    li
+      display block
+      line-height 1.5rem
+      border-right none !important
+@media (max-width 480px)
+  .copyrights
+    li
+      display block
+      line-height 1.5rem
+      border-right none !important
+      
 @media (min-width 992px) 
   .mainFooter
     background transparent
     position fixed
-    width 30%
+    width 35%
     text-align right
     bottom 0
     left 0
+
+@media (max-width 1800px)
+  .mainFooter
+    padding: 2em 2em 3em 2em;

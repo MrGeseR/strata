@@ -7,6 +7,32 @@ header
   margin 0
   padding: 6em 4em;
 
+.mainHeader
+  font-size 1.35rem
+  line-height 1.75rem
+  // width 70%
+@media (max-width 1400px)
+  .mainHeader
+    font-size 1.35rem
+    line-height: 1.5em
+@media (max-width: 1280px)
+  .mainHeader
+    font-size 1.25rem
+@media (max-width: 980px)
+  .mainHeader
+    font-size 1.75rem
+@media (max-width: 768px)
+  .mainHeader
+    font-size 1.35rem
+
+@media (min-width 992px) and (max-width 1560px)
+  br
+    display none
+@media (max-width 480px)
+  br
+    display none
+
+
 #avatar
   border-bottom none
   margin-bottom 1rem
@@ -19,7 +45,7 @@ header
 @media (min-width 992px) 
   header
     position fixed
-    width 30%
+    width 35%
     height 100vh
     top 0
     left 0
